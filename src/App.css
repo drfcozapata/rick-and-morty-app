@@ -40,12 +40,16 @@ img {
 input {
 	border-radius: 5px 0 0 5px;
 }
-.h-150 {
+.h-120 {
 	height: 120px;
 	background-color: #191919;
-	padding: 25px 35px;
+	padding: 25px 45px;
 	margin-bottom: 50px;
 	border-radius: 10px;
+}
+.h-120 span {
+	font-size: 16px;
+	font-weight: normal;
 }
 .h-200 {
 	height: 200px;
@@ -63,10 +67,11 @@ input {
 	min-height: calc(100vh - 114px);
 }
 .footer {
-	margin-top: 70px;
-	height: 70px;
+	margin-top: 80px;
+	height: 60px;
 	width: 100%;
 	padding: 20px;
 	background-color: #191919;
 	color: white;
+	font-size: 14px;
 }

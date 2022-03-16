@@ -8,6 +8,7 @@ const SearchBox = ({ setLocation }) => {
 		axios
 			.get(`https://rickandmortyapi.com/api/location/${searchId}`)
 			.then(res => setLocation(res.data));
+		setSearchId('');
 	};
 
 	return (
@@ -16,8 +17,8 @@ const SearchBox = ({ setLocation }) => {
 				type="text"
 				onChange={e => setSearchId(e.target.value)}
 				value={searchId}
-				className="col-8 text-center"
-				placeholder="Indica un ID de localización"
+				className="col-9 text-center"
+				placeholder="Indica un ID de localización entre 1 y 126"
 			/>
 			<button
 				className="btn btn-sm btn-outline-secondary"
